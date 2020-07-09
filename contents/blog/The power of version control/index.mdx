@@ -1,0 +1,93 @@
+---
+title: The power of version control
+date: 2020-06-02
+image: ./cov.png
+banner: ./cov.png
+description: Version control is commonly used in software industries for development purpose and management of code, so here is an article on version control, git, tools used, basics of git including branches.
+---
+Let's begin the journey of version control and divide this into three parts for better understanding. 🏃‍♂️🥈
+
+What is version control?
+Tools used for version control!
+Basics of Git (Ya that's all you need)
+Version Control 🤔:
+I love food so let me explain in terms of that, suppose you are cooking something let's say biryani so that has certain steps right!! like the initial setup then following the steps making rice, making chicken then finally layering it and putting into proper DUM.
+
+So we can say each step has a version maybe 1, 2, 3 and so on for a project "BIRYANI" and each step can be tracked and monitored which means you can change each step and revert them or track them whenever you want if you are using version control (not in case of food if you burn it 😂 but yes in case of software).
+
+So version control is the management of changes to your code. Changes are usually identified by a number or letter code, termed the "revision number", "revision level", or simply "revision".
+
+Tools used for version control :
+git
+Git- The most powerful tool used for version control is git!
+CVS- It is another popular tool used for version control.
+SVN- Apache Subversion, abbreviated as SVN aims to be a best-matched successor to the widely used CVS tool.
+Mercurial- Mercurial is a distributed V.C. tool which is written in python.
+Monotone- Another distributed revision control written in C++.
+Git is all you need:
+Before we begin let me walk through the branches used in version control.
+
+Every project or repository has a "master" branch inside in which changes are made and the sub-branches are merged. Branches are simply the parts of code that we keep on doing changes.
+
+branch master sub-branch merge 
+Let's take the example of making a cake 🍰🎂.
+
+I am creating a repository with the name "cake" and have cloned that locally to my desktop.
+
+It has a master branch and we can make sub-branches for the steps involved.
+
+So first we need to make a batter for making the cake so let's create a branch "makingbatter"
+
+git checkout -b "makingbatter"
+
+// This command creates a branch named "makingbatter"
+
+now further we can do changes in the form of commits like adding sugar, flour, butter, cocoa powder, egg, salt, baking powder, and so on.
+
+After the changes we need to add the changes done for that:
+
+git add .
+
+// add is used to add the changes done inside a file and. (dot) is used to add all changed files.
+
+After that, you need to commit or simply tell that you have added the files using
+
+git commit -m "Made cake batter"
+
+now comes the magic everything you did was locally on your desktop now you need to do the changes to the remote repository for that you need to push your code for that use:
+
+git push -u origin makingbatter
+
+// This will push your changes done locally to the remote branch, -u is a flag for upstream and origin is an identity for the remote repository.
+
+Boom you made your cake batter and now merge that to your master branch by going to your remote repository simply by creating a PULL REQUEST.
+
+Similarly, you can create branches for baking cake, making icing, final decoration.
+
+So this was branching and how it is done.
+
+Now coming to the basic commands used in git:
+
+```
+git clone <url> //used for cloning or fetching a copy of remote repo locally.
+git status // this shows all your changes done whether it is added or not.
+git add <file name> //used for adding the changed files.
+git commit -m "Message" // this is used for committing the added file including messages.
+git push // this command is used for pushing or sending the local changes to the remote repository.
+git pull // used for updating changes done in remote repo into the local directory.
+git branch // used for getting a list of branches created locally.
+git checkout -b <branch name> // used for creating and switching into branch.
+git checkout <branch name> // used for switching into specific branch.
+```
+This was my version of version control, I tried to cover the basics as well as the commands used.
+
+Hope you have baked your cake now 😋😋
+
+Liked it 😍
+
+Follow me on LinkedIn | Twitter | Github | Instagram
+June 2nd, 2020
+Authors
+
+Kanishk Gupta
+Categories
