@@ -50,7 +50,6 @@ export const ItemPortfolio: React.FC<ItemPortfolioProps> = ({ data, even }) => {
 
     if (state.percentage > percentageThreshold && !state.animated)
         updateState({ animated: true })
-    console.log(data.frontmatter.image.childImageSharp.fluid)
     return (
         <Parallax changePercentage={updateState}>
             <div className="large-container mx-auto">

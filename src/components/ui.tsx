@@ -8,11 +8,11 @@ const Button: React.FC<ButtonProps> = props => {
     let innerComponents = (
         <React.Fragment>
             {props.iconLeft && (
-                <span className="icon icon-left" >{props.iconLeft}</span>
+                <span className="icon icon-left">{props.iconLeft}</span>
             )}
             <span>{props.title}</span>
             {props.iconRight && (
-                <span className="icon icon-right" >{props.iconRight}</span>
+                <span className="icon icon-right">{props.iconRight}</span>
             )}
         </React.Fragment>
     )
