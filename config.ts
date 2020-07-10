@@ -3,7 +3,7 @@ const siteMetadata = {
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
     logo: `/images/K.png`,
-    icon: `/images/Sharp.jpg`,
+    icon: `/images/K.png`,
     titleImage: `/images/wall.png`,
     ogImage: `/images/wall.png`,
     twoColumnWall: true,
