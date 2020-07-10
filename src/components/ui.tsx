@@ -8,11 +8,11 @@ const Button: React.FC<ButtonProps> = props => {
     let innerComponents = (
         <React.Fragment>
             {props.iconLeft && (
-                <span className="icon icon-left">{props.iconLeft}</span>
+                <span className="icon icon-left" >{props.iconLeft}</span>
             )}
             <span>{props.title}</span>
             {props.iconRight && (
-                <span className="icon icon-right">{props.iconRight}</span>
+                <span className="icon icon-right" >{props.iconRight}</span>
             )}
         </React.Fragment>
     )
@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = props => {
         const t = b[1] ? b[1] : "button"
         const dis = disabled === undefined ? false: disabled
         if (b[0] === "button") {
-            return <button type={t} disabled={dis} className={`btn btn-primary${dis ? ' disabled' : ''}`}>{innerComponents}</button>
+            return <button type={t} disabled={dis} className={`btn btn-primary${dis ? ' disabled' : ''}`} style={{marginRight:'10px'}}>{innerComponents}</button>
         }
     }
     return (

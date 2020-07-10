@@ -95,6 +95,7 @@ const Wall = ({ data }) => {
                 {data.introTag}
             </p>
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
+            <div style={{display:'flex',justifyContent:'flex-start',alignItems:'flex-start',alignContent:'space-between'}}>
             <ScrollIntoView selector="#portfolio">
                 <Button
                     title="SEE WORKS"
@@ -102,6 +103,14 @@ const Wall = ({ data }) => {
                     iconRight={<ArrowRight />}
                 />
             </ScrollIntoView>
+            <ScrollIntoView selector="#contact">
+                <Button
+                    title="Contact Me"
+                    type="button"
+                    iconRight={<ArrowRight />}
+                />
+            </ScrollIntoView>
+            </div>
         </React.Fragment>
     )
 
@@ -170,7 +179,7 @@ const Blog = ({ children }) => {
 const Contact = ({ data }) => {
     const hasContactForm = data.api_url
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto" id="contact">
             <div className="pt-20 pb-10 lg:pt-40 lg:pb-20 text-center">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     Contact
